@@ -179,8 +179,10 @@ aside li {
     text-decoration: none;
     list-style-type: square;
     font-style: italic;
-    text-indent: 25px;
+    text-indent: 20px;
     max-width: 100%;
+    width: center;
+
 }
 
 footer {
