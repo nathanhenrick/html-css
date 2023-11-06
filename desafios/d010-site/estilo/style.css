@@ -180,6 +180,7 @@ aside li {
     list-style-type: square;
     font-style: italic;
     text-indent: 25px;
+    max-width: 100%;
 }
 
 footer {
