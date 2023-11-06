@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #012340, #025939);
+}
+
+main{
+    background-color: #deffec;
+    border-radius: 10px;
+    box-shadow: 5px, 5px, 15px, #246f45;
+    width: 600px;
+    padding: 15px;
+    margin: auto;
+}
+h1{
+    color: #03A63C;
+    text-align: center;
+    text-shadow: 1px, 1px, 2px, black;
+}
+
+h2{
+    color: #40ab5a;
+}
+
+p{
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+
+.Northern-Lights-Beach-1-hex { color: #012340; }
+.Northern-Lights-Beach-2-hex { color: #025939; }
+.Northern-Lights-Beach-3-hex { color: #027333; }
+.Northern-Lights-Beach-4-hex { color: #03A63C; }
+.Northern-Lights-Beach-5-hex { color: #04D939; }

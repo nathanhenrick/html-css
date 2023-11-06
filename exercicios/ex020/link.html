@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links personalizados</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: lighter;
+        }
+      
+        a{
+            color: rgb(38, 92, 147);
+            text-decoration: none;
+        }
+
+        .especial{
+            background-color: rgba(100, 148, 237, 0.265);
+            /*width: fit-content;*/
+            text-align: center;
+        }
+
+        
+        a:hover{
+            text-decoration: underline;
+            color: rgb(46, 193, 154);
+        }
+
+        .especial::after{
+            content: ' ⇐';
+            
+        }
+
+        .especial::before{
+            content: '⇒ '
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+
+    <ul type="none">
+    
+        <li class="especial"><a href="https://www.youtube.com" target="_blink" rel="external">Link do YouTube</a></li>
+        <li class="especial"><a href="https://www.facebook.com" target="_blink" rel="external">Link do Facebook</a></li>
+        <li class="especial"><a href="https://www.google.com" target="_blink" rel="external">Link do Google</a></li>
+    
+    </ul>
+
+</body>
+</html>
