@@ -126,14 +126,16 @@ main  p {
 
 img {
     display: block;
-    max-width: 600px;
+    max-width: 400px;
     padding: 10px;
     margin: auto;
 }
 
 iframe {
-    width: 70%;
+    width: 40%;
+    max-width: 100%;
     display: block;
+    padding-bottom: 56.25%;
     background: var(--color0);
     padding: 10px;
     margin: auto;
