@@ -131,6 +131,13 @@ img {
     margin: auto;
 }
 
+picture {
+    display: block;
+    max-width: 400px;
+    padding: 10px;
+    margin: auto;
+}
+
 iframe {
     width: 40%;
     max-width: 100%;
