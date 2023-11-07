@@ -50,7 +50,7 @@ header > p {
 }
 
 nav {
-    text-align: center;
+    text-align: left;
     background-color: #0F293F;
     padding: 10px;
     
@@ -59,7 +59,6 @@ nav {
 nav > a {
     color: white;
     text-decoration: none;
-    margin-right: 75px;
     transition-duration: 0.5s;
 }
 
