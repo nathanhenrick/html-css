@@ -219,7 +219,7 @@ abbr {
 
 @media (max-width: 780px) {
     iframe.container {
-        max-width: 100%;
+        max-width: 80%;
         width: 100%;
         display: flex;
         justify-content: center;
