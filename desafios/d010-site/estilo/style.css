@@ -231,3 +231,10 @@ abbr {
         font-size: 0.85em;
     }
 }
+
+@media (max-width: 510px) {
+    img {
+        max-width: 80%;
+
+    }
+}
