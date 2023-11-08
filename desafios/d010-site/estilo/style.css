@@ -50,16 +50,16 @@ header > p {
 }
 
 nav {
-    text-align: left;
+    text-align: center;
     background-color: #0F293F;
     padding: 10px;
-    
 }
 
 nav > a {
     color: white;
     text-decoration: none;
     transition-duration: 0.5s;
+    margin-right: 50px;
 }
 
 nav > a:hover {
@@ -125,17 +125,16 @@ main  p {
 
 img {
     display: block;
-    max-width: 300px;
+    max-width: 500px;
     padding: 10px;
     margin: auto;
 }
 
 iframe {
-    width: 40%;
     max-width: 100%;
     display: block;
     padding-bottom: 56.25%;
-    background: var(--color0);
+    background-color: var(--color0);
     padding: 10px;
     margin: auto;
     margin-top: 20px;
@@ -198,4 +197,37 @@ footer > p:hover {
 abbr {
     border-bottom: none;
 
+}
+
+@media (max-width: 550px) {
+    .menu {
+        text-align: center;
+    }
+}
+
+@media (max-width: 840px) {
+    header > h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 840px) {
+    header p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    iframe.container {
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 540px) {
+    aside ul {
+        font-size: 0.85em;
+    }
 }
