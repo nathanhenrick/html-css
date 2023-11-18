@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+        td {
+            border: 2px solid black;
+            padding: 50px;
+            width: 100px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td rowspan="2">A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            <td colspan="2">G</td>
+        </tr>
+    </table>
+</body>
+</html>
