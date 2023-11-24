@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 4.0</title>
+    <style>
+        form {
+            text-align: center;
+        }
+        fieldset {
+            border-radius: 10px 10px;
+        }
+        legend {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required minlength="2" maxlength="20" placeholder="Seu nome">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" required placeholder="xx xxxxx xxxx">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required placeholder="Seu e-mail">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    </fieldset>
+    </form>
+</body>
+</html>
