@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: gray;
+    padding: 10px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 30px;
+    background: darkslategray;
+    padding: 5px 10px;
+    border-radius: 10px 10px;
+    color: whitesmoke;
+    font-weight: bold;
+    box-shadow: 3px 3px 0px rgb(46, 105, 105);
+}
+
+header li:hover {
+    background-color: black;
+    color: rgb(213, 176, 84);
+    box-shadow: 3px 3px 0px rgb(101, 101, 101);
+    transition: 0.5s;
+    cursor: default;
+}
+header li:not(:hover) {
+    transition-duration: 0.5s;
+}
+header ul {
+    text-align: center;
+}
+
+main {
+    margin: 20px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    margin-top: 50px;
+}
+
+p {
+    text-indent: 30px;
+    margin: 20px 0px;
+    text-align: justify;
+}
