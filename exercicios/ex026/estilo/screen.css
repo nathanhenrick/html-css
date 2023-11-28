@@ -14,7 +14,7 @@ header h1 {
     margin-bottom: 30px;
 }
 
-header li {
+.menu {
     display: inline-block;
     margin: 0 30px;
     background: darkslategray;
@@ -23,18 +23,27 @@ header li {
     color: whitesmoke;
     font-weight: bold;
     box-shadow: 3px 3px 0px rgb(46, 105, 105);
+    box-sizing: border-box;
 }
 
-header li:hover {
+.menu:hover {
     background-color: black;
     color: rgb(213, 176, 84);
     box-shadow: 3px 3px 0px rgb(101, 101, 101);
     transition: 0.5s;
     cursor: default;
+    transform: scale(1.1);
 }
-header li:not(:hover) {
+
+ul:hover  > *:not(:hover) {
+    opacity: 50%;
+    transform: scale(0.9);
+}
+
+.menu:not(:hover) {
     transition-duration: 0.5s;
 }
+
 header ul {
     text-align: center;
 }
@@ -42,9 +51,8 @@ header ul {
 main {
     margin: 20px 40px;
     font-family: Arial, Helvetica, sans-serif;
-}
-main {
     margin-top: 50px;
+
 }
 
 p {
