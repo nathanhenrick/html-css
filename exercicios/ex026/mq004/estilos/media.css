@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    
+
+
+    #phone {display: none;}
+    #tablet {display: block;}
+    #pc {display: none;}
+    #print {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    
+
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #pc {display: block;}
+    #print {display: none;}
+    #tv {display: none;}
+}
+@media screen and (min-width: 1200px){
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    
+
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #pc {display: none;}
+    #print {display: none;}
+    #tv {display: block;}
+}
+
+@media print {
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main::after {
+        content: 'Essa impressão foi imprimida. Obrigado pela atenção';
+        text-decoration: overline;
+    }
+    h1 {
+        color: black;
+        text-shadow: none;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #pc {display: none;}
+    #print {display: block;}
+    #tv {display: none;}
+}
