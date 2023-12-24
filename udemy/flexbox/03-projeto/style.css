@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #98fbd7;
+}
+
+header {
+    text-align: center;
+    color: #001e38;
+    margin-bottom: 50px;
+}
+
+.lista {
+    display: flex;
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+.lista-item {
+    flex-basis: 260px;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.364);
+    border-radius: 10px;
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.lista-item--imagem img {
+    border-radius: 50%;
+    margin-top: 125px;
+    width: 90px;
+}
+
+.lista-item--nome {
+    color: #001e38;
+}
+
+.lista-item--nome .email {
+    color: #416789;
+    margin-bottom: 5px;
+}
+
+.lista-item--logo {
+    display: flex;
+    background-color: #001e38;
+    padding: 7px;
+    opacity: 0%;
+    transition: 0.4s;
+    justify-content: space-evenly;
+}
+
+.lista-item--logo a {
+    text-decoration: none;
+    color: #416789;
+
+}
+
+.lista-item:hover .lista-item--logo {
+    opacity: 100%;
+    transition: 0.4s;
+}
