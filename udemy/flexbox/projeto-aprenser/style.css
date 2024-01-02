@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap'); /*Rubik*/
+
+:root {
+    --corFundoHeader : #2a2a2a;
+    --corAmarelo : #fed001;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+#header-background {
+    display: flex;
+    align-items: center;
+
+    background-color: var(--corFundoHeader);
+}
+header {
+    position: sticky;
+    top: 0rem;
+}
+.menus {
+    padding-top: 10rem;
+}
+
+
+header #logo {
+    flex-grow: 1;
+    padding: 1.5rem 5rem;
+}
+header #menu {
+    margin-right: 10rem;
+}
+header #menu a {
+    border: 0.1rem solid var(--corAmarelo);
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: var(--corAmarelo);
+    padding: 1.5rem;
+    margin: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+#menu a:hover {
+    color: #fff;
+    border: 0.1rem solid #fff;
+    transition: all .2s ease-in-out;
+}
+#main-1 {
+    background-image: linear-gradient(to top, #ffda34, #ffffe9);
+    display: flex;
+}
+#frase-top {
+    color: #2a2a2a;
+    align-self: center;
+    padding: 12rem;
+    letter-spacing: 0.2rem;
+}
+
+#frase-top h1 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+#frase-top a {
+    display: inline-block;
+
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 1.7rem;
+    background-color: var(--corAmarelo);
+    padding: 1.3rem 4rem;
+    border-radius: 1rem;
+    transition-duration: 0.3s;
+    font-weight: 500;
+}
+#frase-top a:hover {
+    background-color: var(--corFundoHeader);
+    color: var(--corAmarelo);
+    transition-duration: 0.3s;
+}
+
+#imagem-top {
+    margin-top: 3rem;
+    height: 63.3rem;
+}
+main h2 {
+    text-align: center;
+    margin: 4rem;
+    font-size: 3rem;
+    color: #2a2a2a;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    margin-top: 0;
+}
+
+.container h2 {
+    color: #2a2a2a;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+}
+.container p {
+    font-size: 1.35rem;
+    color: gray;
+    line-height: 2rem;
+}
+.item {
+    margin: 1.7rem;
+}
+
+main a {
+    background-color: var(--corAmarelo);
+    color: var(--corFundoHeader);
+    text-decoration: none;
+
+    font-size: 1.7rem;
+    width: fit-content;
+    display: block;
+    margin: auto auto 7rem auto;
+    padding: 1.3rem 4rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    transition-duration: 0.3s;
+    
+}
+
+main a:hover {
+    background-color: var(--corFundoHeader);
+    color: var(--corAmarelo);
+    transition-duration: 0.3s;
+}
+
+#main-background-2 {
+    display: flex;
+    background-color: #083a69;
+    height: 49.7rem;
+}
+
+#frase-main h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    margin-left: 2rem;    
+}
+#frase-main p {
+    color: white;
+    font-size: 1.35rem;
+    letter-spacing: 0.15rem;
+    line-height: 2rem;
+    padding: 5rem;
+}
+
+#mapa {
+    text-align: center;
+    margin: auto;
+}
+#secao-mapa article {
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-right: 2.5rem;
+    color: #2a2a2a;
+}
+
+#footer-background {
+    background-color: var(--corFundoHeader);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}

@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap'); /* Título header*/
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap'); /*Título main*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap'); /*Geral*/
+
+:root {
+    --corTopHeader:   #162028;
+    --corMenu:        #425564;
+    --corTexto:       #555;
+    --corFundoBox:    #003d52;
+    --corFundoFooter: #0b171f;
+    --corTextoFooter: #6f8597;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 2500px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    background-color: var(--corTopHeader);
+    padding: 20px;
+    box-sizing: border-box;
+}
+header h1 {
+    color: white;
+    font-family: 'Federo', sans-serif;    
+    flex-grow: 1;
+    margin-left: 10rem;
+    cursor: default;
+}
+nav {
+    color: var(--corMenu);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    align-self: center;
+}
+header a {
+    text-decoration: none;
+    color: var(--corMenu);
+    margin: 40px;
+    transition-duration: .2s;
+}
+
+header a:hover {
+    color: #7697b0;
+    transition-duration: .2s;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    text-align: center;
+}
+#item {
+    width: 100%;
+    height: 650px;
+    background-image: url(imagens/topo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 7rem;
+}
+
+
+#item1 h1 {
+    font-family: 'Italiana', sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+
+    margin-bottom: 1.4em;
+    color: var(--corTopHeader);
+}
+#item1 p {
+    margin: 0 6.5rem;
+    text-align: center;
+    letter-spacing: 0.075rem;
+
+    line-height: 1.8em;
+    font-size: 1.25em;
+    color: var(--corTexto);
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.item2 {
+    margin: 5rem 0px;
+}
+
+.item2 img {
+    margin: 1rem;
+    width: 20rem;
+}
+
+.item2 h2, p {
+    color: var(--corTexto);
+    letter-spacing: 0.075rem;
+    padding: 0.5rem;
+}
+
+.container3 {
+    background-image: url(imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 6rem;
+}
+
+.container3 h1 {
+    color: white;
+    font-family: 'Italiana', sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    font-size: 4rem;
+    padding-top: 5rem;
+    letter-spacing: 2px;
+
+    cursor: default;
+}
+.container3 p {
+    color: white;
+    text-align: left;
+    margin-top: 3rem;
+    margin-right: 25rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+
+    line-height: 1.5rem;
+}
+
+footer {
+    background-color: var(--corFundoFooter);
+    text-align: center;
+    padding: 1rem;
+    cursor: default;
+}
+footer p {
+    color: var(--corTextoFooter);
+}
