@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+a:first-of-type::after {
+    content: url(imagens/newWindow-icon.png);
+    margin-left: 1rem;
+}
+a:last-of-type::before {
+    content: url(imagens/pdf-icon.gif);
+    margin-right: 1rem;
+}
+label:first-of-type {
+    color: darkred;
+}
+input:checked + label:first-of-type{
+    color: green;
+}
+label:last-of-type {
+    color: blue;
+}
+ul li:nth-of-type(3) {
+    background-color: lightseagreen;
+    color: crimson;
+    width: fit-content;
+}

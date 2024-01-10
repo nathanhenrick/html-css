@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(0, 0, 21);
+}
+h1, label {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr {
+    margin: 0.8rem 0;
+}
+
+
+.lvl1 input[type="checkbox"] {
+    display: none;
+}
+.lvl1 label > span {
+    display: inline-block;
+    border: 2px solid goldenrod;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+}
+.lvl1 input[type="checkbox"]:checked + label span {
+    background-color: goldenrod;
+}
+.lvl1 input[type="checkbox"]:checked + label span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 0.16rem solid white;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    width: 0.5rem;
+    height: 1rem;
+    transform: rotate(30deg);
+    top: 0;
+    right: .625rem;
+    bottom: .7rem;
+    left: .375rem;
+}
+
+
+.lvl2 input[type="checkbox"] {
+    width: 1px;
+    width: 1px;
+    position: absolute;
+    opacity: 0;
+}
+.lvl2 input[type="checkbox"]:focus+label span {
+    outline: 2px solid rgba(218, 165, 32, 0.281);
+    outline-offset: 1px;
+}
+
+.lvl2 label > span {
+    display: inline-block;
+    border: 2px solid goldenrod;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+}
+.lvl2 input[type="checkbox"]:checked + label span {
+    background-color: goldenrod;
+}
+.lvl2 input[type="checkbox"]:checked + label span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 0.16rem solid white;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    width: 0.5rem;
+    height: 1rem;
+    transform: rotate(30deg);
+    top: 0;
+    right: .625rem;
+    bottom: .7rem;
+    left: .375rem;
+}
+
+
+
+.lvl3 input[type="checkbox"] {
+    width: 1px;
+    width: 1px;
+    position: absolute;
+    opacity: 0;
+    
+}
+.lvl3 input[type="checkbox"]:focus+label span {
+    outline: 2px solid rgba(218, 165, 32, 0.281);
+    outline-offset: 1px;
+}
+
+.lvl3 label > span {
+    display: inline-block;
+    border: 2px solid goldenrod;
+    width: 3rem;
+    height: 1.5rem;
+    position: relative;
+    border-radius: 3rem;
+    background-color: blanchedalmond;
+}
+.lvl3 input[type="checkbox"] + label span::after {
+    content: "";
+    display: block; 
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: goldenrod;
+    border-radius: 50%;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    transform: translateX(0);
+
+}
+.lvl3 input[type="checkbox"]:checked + label span {
+    background-color: goldenrod;
+}
+.lvl3 input[type="checkbox"]:checked + label span::after {
+    content: "";
+    display: block; 
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    transition-duration: .2s;
+
+    transform: translateX(100%);
+}

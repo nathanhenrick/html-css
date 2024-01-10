@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Login</h1>
+        <form action="cadastro.php" method="post">
+            <fieldset>
+                <h2>Entre com seus dados de acesso</h1>
+                    <p>
+                        <label for="inome">Usuário</label><br>
+                        <input type="text" name="nome" id="inome" required placeholder="Nome de usuário" minlength="1" maxlength="25">
+                    </p>
+
+                    <p>
+                        <label for="isenha">Senha</label><br>
+                        <input type="password" name="senha" id="isenha" required placeholder="Mínimo de 8 caracteres" minlength="8" maxlength="20">
+                    </p>
+
+                    <p><input type="submit" value="Entrar"></p>
+            </fieldset>
+
+
+
+        </form>
+    </main>
+</body>
+</html>
