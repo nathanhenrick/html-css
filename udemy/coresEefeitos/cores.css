@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+    background-image: url(imagens/tile.png);
+}
+setion {
+    counter-reset: contador;
+}
+.cores {
+    width: 80%;
+    border: 4px dashed black;
+    margin: 1.2rem auto;
+    padding: 1rem;
+    counter-increment: contador;
+    height: 10rem;
+}
+.cores::before {
+    content: "[ "counter(contador) " ]";
+    font-weight: bold;
+}
+.cores p {
+    margin: 0;
+    padding-top: 1rem;
+}
+
+/*--------------------------------------------------------------------*/
+
+.cores:nth-of-type(1) {
+    background-image: linear-gradient(270deg, darkblue, rgb(186, 48, 186));
+    background-clip: padding-box;
+    color: white;
+}
+.cores:nth-of-type(2) {
+    background-image: radial-gradient(circle at 50% 0, #ff0000 2%, blue);
+    color: white;
+}
+.cores:nth-of-type(3) {
+    background-image: radial-gradient(ellipse 60% 80%, goldenrod, red);
+    color: white;
+}
+.cores:nth-of-type(4) {
+
+}
+.cores:nth-of-type(5) {
+
+}
+.cores:nth-of-type(6) {
+
+}
+.cores:nth-of-type(7) {
+
+}
+.cores:nth-of-type(8) {
+
+}
+.cores:nth-of-type(9) {
+
+}
+.cores:nth-of-type(10) {
+
+}
+.cores:nth-of-type(11) {
+
+}
