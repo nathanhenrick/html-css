@@ -29,9 +29,9 @@ h1 {
     width: 20rem;
     padding: 3rem;
     background-image: linear-gradient(135deg, transparent 10%, whitesmoke 10%);
-
 }
 .post > h2 {
+    padding-top: 1.6rem;
     padding-bottom: 1rem;
     font-weight: normal;
     font-style: italic;
@@ -40,9 +40,44 @@ h1 {
 .post p {
     text-align: justify;
 }
-.container .type2::before {
-    width: 50px;
-    height: 50px;
-    background-color: blue;
-    border: 10px solid green;
+.type2 {
+    position: relative;
+}
+.type2::before {
+    content: '';
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-image: linear-gradient(135deg, transparent 50%, rgb(149, 149, 149) 50%);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.type3 {
+    position: relative;
+
+}
+.type3::before {
+    content: '';
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-image: linear-gradient(135deg, transparent 50%, #959595 50%);
+    filter: drop-shadow(2px 2px 2px #0000004f);
+
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#teste {
+    width: 250px;
+    height: 250px;
+    margin: 5rem auto;
+
+    background-image: repeating-linear-gradient(45deg, lightblue 10%, darkblue
+    20%);
 }
