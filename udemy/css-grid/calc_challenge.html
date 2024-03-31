@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            background-image: linear-gradient(200deg, #484cbf, #141645);
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div#grid-container {
+            background-color: #557b9f;
+            width: 20rem;
+            margin: 5em auto;
+            padding: 0.6em;
+        }
+        div#result {
+            background-color: #2b2929;
+            margin: 1em auto;
+
+            width: 20em;
+            height: 5em;
+        }
+        table#buttons {
+            margin: 0 auto;
+            width: 20rem;
+            height: 15em;
+            text-align: center;
+
+        }
+        table#buttons td {
+            background-color: #2b2929;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid-container">
+        <div id="result"></div>
+
+        <table id="buttons">
+            <tr>
+                <td>AC</td>
+                <td>%</td>
+                <td>X</td>
+                <td>/</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>=</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td rowspan="2" id="plus">+</td>
+            </tr>
+            <tr>
+                <td colspan="2">0</td>
+                <td>,</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

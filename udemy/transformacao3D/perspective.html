@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Perspective</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .cena {
+            border: 2px solid #ccc;
+            width: 300px;
+            aspect-ratio: 1;
+            margin: 0 auto;
+        }
+
+        .plano {
+            background-color: red;
+        }
+
+        #cena1 {
+            perspective: 600px;
+        }
+
+        #cena1 .plano {
+            width: 200px;
+            margin: 50px;
+            aspect-ratio: 1;
+            text-align: center;
+
+            transform: rotateY(45deg);
+            border-top: 3px solid black;
+            border-left: 10px solid black;
+        }
+
+        #cena2 .plano {
+            width: 200px;
+            margin: 50px;
+            aspect-ratio: 1;
+            text-align: center;
+
+            transform: perspective(600px) rotateY(45deg);
+            border-top: 3px solid black;
+            border-left: 10px solid black;
+        }
+        #cena2 > .plano2 {
+            transform: perspective(600px) rotateY(-45deg);
+            border-top: 3px solid black;
+            border-left: 10px solid black;
+        }
+        #cena3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 10rem;
+            perspective: 500px;
+        }
+        #cena3 .plano {
+            margin: 0.6em;
+            transform: rotateX(45deg);
+            text-align: center;
+            border-top: none;
+            border-right: 2px solid black;
+            border-bottom: 5px solid black;
+            border-left: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cena" id="cena1">
+        <div class="plano">PLANO</div>
+    </div>
+    <div class="cena" id="cena2">
+        <div class="plano">PLANO</div>
+        <div class="plano plano2">PLANO-2</div>
+    </div>
+    <div class="cena" id="cena3">
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+    </div>
+    <!-- <div class="cena" id="cena4">
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+        <div class="plano">PLANO</div>
+    </div> -->
+
+</body>
+
+</html>

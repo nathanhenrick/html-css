@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #eeeeee;
+}
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #eeeeee;
+}
+
+#header-img {
+    width: 20em;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+header > #div-img {
+    flex-grow: 1;
+}
+#nav-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+#nav-bar ul {
+    display: flex;
+    gap: 6em;
+}
+
+#nav-bar .nav-link{
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#nav-bar .nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+section#hero {
+    text-align: center;
+}
+section#hero > h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+input#email {
+    margin: 1.2em;
+    padding: 0.5em;
+}
+input#submit {
+    display: block;
+    margin: auto;
+    padding: 0.5rem 1rem;
+    border: 0.125rem solid black;
+    background-color: #f8a845;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+input#submit:hover {
+    background-color: #ffa538;
+}
+section#things {
+    text-align: center;
+    margin: 4em;
+}
+#things > div {
+    margin: 2em;
+    background-color: #f8a845;
+    border-radius: 1em;
+    padding: 1em;
+}
+#things h1 {
+    padding: 0.5em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+#things p {
+    color: rgb(15,15,15);
+}
+#video {
+    display: block;
+    margin: 5em auto;
+}
+#container-cards {
+    display: flex;
+    justify-content: center;
+    margin: 5em;
+}
+.cards {
+    margin: 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+.cards h2 {
+    background-color: rgb(195, 195, 195);
+    font-weight: normal;
+    font-size: 1.15em;
+    padding: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    text-align: center;
+}
+.cards h3 {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 1.45em;
+    letter-spacing: 1px;
+}
+.cards p {
+    padding: 0 8em;
+    text-align: center;
+    line-height: 1.75em;
+}
+.cards button {
+    display: block;
+    margin: 1rem auto;
+    width: 15rem;
+    padding: 0.5rem;
+    background-color: #f8a845;
+    border: 1px solid black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+.cards button:hover {
+    background-color: #ffa538;
+}
+footer {
+    text-align: right;
+    background-color: lightgray;
+    padding: 1em;
+}
+footer > div {
+    display: flex;
+    justify-content: right;
+    gap: 2em;
+    padding-bottom: 1em;
+}
+footer div h4 {
+    cursor: pointer;
+}
+footer div + p {
+    color: rgb(62, 62, 62);
+}
+
+@media (max-width: 650px) {
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 50px;
+}
+}

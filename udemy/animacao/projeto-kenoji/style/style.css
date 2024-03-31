@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes main {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(25px, 12px);
+
+    }
+
+    50% {
+        transform: translate(-30px, -30px);
+    }
+
+    75% {
+        transform: translate(-45px, 15px);
+    }
+
+    to {
+        transform: translate(15px, -30px);
+    }
+}
+@keyframes main-img1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(35px, -10px);
+
+    }
+
+    50% {
+        transform: translate(-25px, -20px);
+    }
+
+    75% {
+        transform: translate(-45px, -50px);
+    }
+
+    to {
+        transform: translate(-15px, -5px);
+    }
+}
+@keyframes main-img2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(15px, -10px);
+
+    }
+
+    50% {
+        transform: translate(15px, -25px);
+    }
+
+    75% {
+        transform: translate(-45px, -50px);
+    }
+
+    to {
+        transform: translate(-15px, -20px);
+    }
+}
+
+body {
+    background-image: linear-gradient(-45deg, #ffca53 50%, #fff7cc);
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+}
+
+div#wrapper {
+    margin: 4rem;
+    margin-top: 2rem;
+}
+
+main h1 {
+    font-size: 3rem;
+    width: 470px;
+    letter-spacing: 2px;
+}
+
+h1 strong {
+    color: #b9282f;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+input#text {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+    margin: 1rem;
+    padding: 12px 8px;
+}
+
+input#submit {
+    background-color: #051e47;
+    color: white;
+    border-radius: .5rem;
+    border: 1px solid black;
+    padding: 12px 16px;
+}
+
+div.animation img {
+    position: absolute;
+}
+
+#img1 {
+    /*SORRISINHO*/
+    top: 13rem;
+    right: 34rem;
+
+    animation: main-img1 13.5s ease-in-out infinite alternate;
+}
+
+#img2 {
+    /*TRISTEZINHO*/
+    top: 3rem;
+    right: 7rem;
+
+    animation: main-img1 15s ease-in-out infinite alternate-reverse;
+}
+
+#img3 {
+    /*MAIOR*/
+    top: 2rem;
+    right: 7rem;
+
+    animation: main 12s ease-in-out infinite alternate;
+}
+
+#img4 {
+    /*CHORANDO DE RIR*/
+    top: 23rem;
+    right: 27rem;
+
+    animation: main 15s ease-in-out infinite alternate-reverse;
+}
+
+#img5 {
+    /*LÍNGUA DE FORA*/
+    top: 0;
+    right: 22rem;
+    width: 235px;
+    
+    animation: main-img2 12s ease-in-out infinite alternate;
+}
+
+#img6 {
+    /*IMPRESSIONADO*/
+    top: 22rem;
+    right: 8rem;
+
+    animation: main-img2 8s ease-in-out infinite alternate;
+}

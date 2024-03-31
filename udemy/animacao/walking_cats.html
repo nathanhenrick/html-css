@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking Cats</title>
+    <style>
+        @keyframes walk {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 0 -2390px;
+            }
+        } 
+
+        #cat {
+            width: 400px;
+            height: 200px;
+
+            background-color: #ccc;
+            background-image: url(walking_sprite.png);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+
+            animation-name: walk;
+            animation-duration: .8s;
+            animation-timing-function: steps(12);
+            animation-fill-mode: backwards;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+    </style>
+</head>
+<body>
+    <div id="cat"></div>
+    
+</body>
+</html>

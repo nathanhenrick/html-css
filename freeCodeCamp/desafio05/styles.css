@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+:root {
+    --corRed: #be3144;
+    --corDarkGray: #1a191b;
+    --corGray: #303841;
+    --corWhite: #f0f0f0;
+    --corBlue: #45567d;
+    --fontPoppins: "Poppins", sans-serif;
+    --fontRaleway: "Raleway", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 0.375em;
+}
+body::-webkit-scrollbar-track {
+    background-color: var(--corDarkGray);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--corRed);
+    border: 1px solid var(--corDarkGray);
+    border-radius: 0.3em;
+}
+
+#navbar {
+    background-color: var(--corRed);
+    height: 4em;
+    padding-right: 4em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.331);
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 2em;
+
+    position: fixed;
+    width: 100vw;
+}
+#navbar > a {
+    text-decoration: none;
+    color: var(--corWhite);
+
+    font-family: var(--fontPoppins);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    background-color: transparent;
+    transition-duration: 0.2s;
+    padding: 0.8em;
+}
+#navbar a:hover {
+    background-color: var(--corGray);
+    transition-duration: 0.2s;
+}
+
+#welcome-section {
+    background-image: linear-gradient(45deg, #393c3f, var(--corDarkGray) 90%);
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#welcome-section h1 {
+    color: var(--corWhite);
+    font-size: 3.5em;
+    font-family: var(--fontRaleway);
+}
+
+#welcome-section p {
+    color: var(--corRed);
+    font-family: var(--fontPoppins);
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 2em;
+}
+
+#projects {
+    height: 100vh;
+    background-color: var(--corBlue);
+}
+#projects h1 {
+    color: var(--corWhite);
+    font-family: var(--fontRaleway);
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    padding: 70px;
+    font-size: 2.5em;
+}
+#projects #items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.project-tile {
+    height: 430px;
+    overflow: hidden;
+    width: 350px;
+}
+.project-tile p {
+    text-align: center;
+    color: var(--corWhite);
+    font-family: var(--fontPoppins);
+    background-color: var(--corGray);
+    padding: 1em;
+}
+.project-tile a {
+    text-decoration: none;
+}
+.project-image {
+    height: calc(100% - 6rem);
+    width: 100%;
+    object-fit: cover;
+}
+#projects img {
+    width: 430px;
+    display: block;
+}
+
+
+#contact {
+    position: relative;
+
+    height: 90vh;
+    background-color: var(--corGray);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact h1 {
+    color: var(--corWhite);
+    font-size: 3em;
+    font-family: var(--fontRaleway);
+    font-weight: bold;
+}
+
+#contact #hero {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+#hero p {
+    color: var(--corWhite);
+    font-family: var(--fontPoppins);
+    font-weight: lighter;
+    font-style: italic;
+}
+#contact-links {
+    display: flex;
+    gap: 5em;
+    padding: 2em;
+
+}
+#contact-links a {
+    color: var(--corWhite);
+    text-decoration: none;
+    font-family: var(--fontPoppins);
+    letter-spacing: 2px;
+}
+#contact-links a:hover {
+    color: var(--corRed);
+    text-decoration: overline;
+    font-weight: bolder;
+}
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 1.5em;
+    bottom: 0;
+    border-top: 2px solid var(--corRed);
+    width: 100%;
+
+    gap: 5em;
+    color: var(--corWhite);
+    font-family: var(--fontPoppins);
+}

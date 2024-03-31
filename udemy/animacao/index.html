@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 1</title>
+    <style>
+        @keyframes run {
+            from {
+                transform: 0;
+            }
+
+            to {
+                transform: translateX(300px);
+            }
+        }
+
+        @keyframes runOut {
+            from {
+                transform: translateX(0);
+            }
+
+            25% {
+                background-color: rgb(68, 86, 37);
+            }
+
+            75% {
+                background-color: rgb(18, 84, 45)
+            }
+
+            to {
+                transform: translateX(300px);
+            }
+        }
+
+        div#container {
+            width: 400px;
+            height: 97vh;
+            background-color: #7b3a3a;
+            margin: 0 auto;
+            position: relative;
+
+        }
+
+        #div1 {
+            width: 100px;
+            height: 100px;
+            background-color: #ff7f7f;
+            margin-bottom: 1rem;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
+
+            animation-name: run;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        #div2 {
+            width: 100px;
+            height: 100px;
+            background-color: #0000001a;
+            margin-bottom: 1rem;
+
+            animation-name: runOut;
+            animation-duration: 1s;
+            will-change: transform;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        #div3 {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="div1"></div>
+        <div id="div2"></div>
+
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+        <div id="div6"></div>
+    </div>
+
+</body>
+
+</html>
