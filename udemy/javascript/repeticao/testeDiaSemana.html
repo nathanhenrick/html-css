@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia da Semana</title>
+</head>
+
+<body>
+    <main>
+        <div id="answer"></div>
+    </main>
+
+    <script>
+        const answerDiv = document.querySelector("#answer")
+        const dayNumber = prompt("Insira um número de 1 à 6 (relacionado ao dia semana):")
+        const dayCalc = Number(dayNumber)
+
+        function calculo(dayCalc) {
+            if (dayCalc < 1 || dayCalc > 7) {
+                alert('ERRO. Inserir de 1 a 7 apenas')
+                return false
+            } else {
+                return true
+            }
+        }
+        if (calculo(dayCalc)) {
+            switch (dayCalc) {
+                case 1:
+                    alert("Segunda-feira")
+                    break
+                case 2:
+                    alert("Terça-feira")
+                    break
+                case 3:
+                    alert("Quarta-feira")
+                    break
+                case 4:
+                    alert("Quinta-feira")
+                    break
+                case 5:
+                    alert("Sexta-feira")
+                    break
+                case 6:
+                    alert("Sábado")
+                    break
+                case 7:
+                    alert("Domingo")
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

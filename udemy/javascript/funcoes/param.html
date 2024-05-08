@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt e Input</title>
+    <style>
+        #output {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Função área do CÍRCULO</h1>
+    <label for="raio">
+        <input type="number" name="raio" id="idRaio">
+    </label>
+
+    <button onclick="mostrarPrompt()">Calcular a área: PROMPT</button>
+    <button onclick="mostrarInput()">Calcular a área: INPUT</button>
+
+    <output id="output"></output>
+
+    <script>
+        const raio = document.getElementById('idRaio')
+        const output = document.getElementById('output')
+
+        function mostrarPrompt() {
+            let valorRaio = parseFloat(prompt('Digite o raio:'))
+            mostrarArea(valorRaio)
+        }
+        function mostrarInput() {
+            let valorRaio = parseFloat(raio.value)
+            mostrarArea(valorRaio)
+            
+        }
+    // Parâmetro pega o valor dentro da variável que fora posta como argumento.
+        function mostrarArea(raio) {
+            const pi = Math.PI;
+            let area = pi * raio * raio // pi x raio²
+
+            output.innerHTML = `A área da circuferência de raio ${raio} é ${area.toFixed(2)}`
+        }
+    </script>
+</body>
+</html>

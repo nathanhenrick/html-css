@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1</title>
+</head>
+<style>
+    html {
+        font-family: arial;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    ul#lista {
+        text-align: center;
+        list-style: none;
+    }
+    ul#lista li {
+        padding: 8px;
+        cursor: default;
+    }
+</style>
+
+<body>
+    <h1>
+        Lista de clientes
+    </h1>
+
+    <script>
+        let people = [
+            { nome: 'Nathan',   email: 'nathan@server.com' },
+            { nome: 'Edmond',   email: 'edmond@server.com' },
+            { nome: 'Dantès',   email: 'dantes@server.com' },
+            { nome: 'Faria',    email: 'faria@server.com' },
+            { nome: 'Mercedes', email: 'mercedes@server.com' }
+        ]
+
+        const list = document.createElement('ul')
+        list.id = 'lista'
+
+        // Usar o index do array pra pôr como 'li'
+        for (let i = 0; i < people.length; i++) {
+            const list_data = document.createElement('li')                // Criação 'li'
+            list_data.innerHTML = `${people[i].nome}: ${people[i].email}` // Conteúdo do 'li'
+            list.appendChild(list_data)                                   // Colocando como filho
+
+        }
+        document.body.appendChild(list);                                  // nserindo ao 'body'
+
+
+    </script>
+</body>
+
+</html>

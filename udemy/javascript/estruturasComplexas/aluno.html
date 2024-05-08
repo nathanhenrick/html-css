@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprovação aluno</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+        }
+
+        div#res {
+            /* background-color: darkslategray; */
+            background-color: #1c761a;
+            color: white;
+            text-align: center;
+            margin: 0 auto;
+
+            width: 400px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Problema: Aluno
+    </h1>
+    <div id="res"></div>
+
+    <script>
+        const $res = document.getElementById('res')
+        let nota1 = Number(prompt('Nota do 1º(primeiro) bimestre:'));
+        let nota2 = Number(prompt('Nota do 2º(segundo) bimestre:'));
+        let nota3 = Number(prompt('Nota do 3º(terceiro) bimestre:'));
+        let nota4 = Number(prompt('Nota do 4º(quarto) bimestre:'));
+
+
+        const aluno = {
+            nome: 'Dantès',
+            notas: [nota1, nota2, nota3, nota4]
+        };
+        console.log(aluno.notas)
+
+        let soma = 0;
+        for (let i = 0; i < aluno.notas.length; i++) {
+            soma += aluno.notas[i]
+        };
+        const media = soma / 4;
+
+        if (media > 6) {
+            $res.innerHTML = `APROVADO <br> Nota: ${media}`
+            $res.style.backgroundColor = '#1c761a'
+        } else {
+            $res.innerHTML = `REPROVADO <br> Nota: ${media}` 
+            $res.style.backgroundColor = '#761a1a'
+        }
+    </script>
+</body>
+
+</html>

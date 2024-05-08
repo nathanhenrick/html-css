@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média dos alunos</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div#mediaDiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 500px;
+            aspect-ratio: 1;
+
+            background-color: rgb(42, 83, 124);
+            color: white;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.452);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mediaDiv"></div>
+    <script>
+        const $mediaDiv = document.getElementById('mediaDiv');
+
+        const alunos = [
+            {
+                nome: "Edmond",
+                notas: [9, 8, 7, 10]
+            },
+            {
+                nome: "Villefort",
+                notas: [8, 8, 7.5, 9]
+            },
+            {
+                nome: "Albert",
+                notas: [7, 7, 9, 8.5]
+
+            }
+        ]
+            
+        let somaNotas = 0;
+        let media = 0;
+
+        for (let i = 0; i < alunos.length; i++) {
+            for (let j = 0; j < alunos[i].notas.length; j++) {
+                somaNotas += alunos[i].notas[j];
+            }
+            media = somaNotas / alunos[i].notas.length
+            $mediaDiv.innerHTML += `${alunos[i].nome}: Média de ${media.toFixed(2)} <br>`
+            somaNotas = 0
+        }
+    </script>
+
+</body>
+
+</html>

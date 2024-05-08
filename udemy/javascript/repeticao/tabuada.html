@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thousand Tabuada</title>
+</head>
+
+<body>
+    <script>
+        const number = prompt("Digite um número para que se faça a respectiva tabuada: ")
+        const NumberInt = Number(number.replace(',', '.'));
+
+
+        function calculo(NumberInt) {
+            if (isNaN(NumberInt)) {
+                alert(`ERRO. Insira apenas números)`)
+                return false
+            } else {
+                return true
+            }
+        }
+        if (calculo(NumberInt)) {
+            for (let contador = 0; contador <= 1000; contador++) {
+                let answer = Number(NumberInt) * contador
+                document.write(`${NumberInt} x  ${contador} = ${answer} <br>`)
+            }
+        }
+    </script>
+</body>
+
+</html>

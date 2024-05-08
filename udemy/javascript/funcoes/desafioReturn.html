@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+            color: white;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Soma de dois números
+    </h1>
+    <br>
+
+    <div id="div"></div>
+
+    <script>
+        const firstNumber = Number(prompt('Digite o primeiro número:'))
+        const secondNumber= Number(prompt('Digite o segundo número:'))
+        
+        function somar(num1, num2) {
+            return num1 + num2;
+        }        
+        
+        const somaGeral = somar(firstNumber, secondNumber)
+        const $div = document.getElementById('div')
+        $div.innerHTML = `${somaGeral}`
+
+
+    </script>
+</body>
+
+</html>
